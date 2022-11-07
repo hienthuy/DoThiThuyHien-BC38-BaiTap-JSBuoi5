@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .info {
+            background-color: yellow;
+            color: red;
+            font-size: 20px;
+            width: 30%;
+            margin-top: 30px;
+            padding: 5px 0;
+            font-weight: bold;
+        }
+        input {
+            padding: 5px;
+            color: Black;
+            width: 20%;
+            font-size:20px;
+            border: 2px solid blue ;
+            margin: 10px 50px 10px 15px;
+       
+        }
+        select {
+            padding: 5px;
+            color: Black;
+            width: 20%;
+            font-size:20px;
+            border: 2px solid blue ;
+            margin: 0px 50px 0 15px;
+            margin: 10px 50px 10px 15px;
+        }
+        button {
+            color: white;
+            font-size: 20px;
+            padding: 5px 15px;
+            margin-left:15px ;
+            background-color: blue;
+            border: 1px solid blue;
+            border-radius: 5%;
+        }
+        span {
+            font-size: 20px;
+            font-weight: bold;
+           
+        }
+    </style>
+
+</head>
+<body>
+    <h1>BÀI TẬP JS BUỔI 5</h1>
+    <h2>Bài 1: Quản lý tuyển sinh</h2>
+    <input type="number" placeholder="Điểm chuẩn" id="standScore">
+    <br>
+    <select name="" id="areaScore" placeholder="Chọn khu vực">
+        <option value="0">Chọn khu vực</option>
+        <option value="2">A</option>
+        <option value="1">B</option>
+        <option value="0.5">C</option>
+    </select>
+    <br>
+    <select name="" id="objectScore" placeholder="Chọn đối tượng">
+        <option value="0">Chọn đối tượng</option>
+        <option value="2.5">1</option>
+        <option value="1.5">2</option>
+        <option value="1">3</option>
+    </select>
+    <br>
+    <input id="scoreSubject1"  type="number" placeholder="Điểm môn thứ 1">
+    <br>
+    <input id="scoreSubject2"  type="number" placeholder="Điểm môn thứ 2">
+    <br>
+    <input id="scoreSubject3"  type="number" placeholder="Điểm môn thứ 3">
+    <br>
+    <button onclick="adManager()">Kết quả</button>
+    <div id="adResult"></div>
+
+    <hr style="width: 100%;">
+    <h2>Bài 2: Tính tiền điện </h2>
+    <input id="name" type="text" placeholder="Nhập họ tên">
+    <br>
+    <input id="elecNumber" type="number" placeholder="Nhập số kw">
+    <br>
+    <button onclick="electricBill()">Tính tiền điện</button>
+    <br>
+    <div id="elecBillResult"></div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
